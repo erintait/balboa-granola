@@ -169,10 +169,6 @@ h1, h2 {
     background-color: #fff;
 }
 
-.main-content {
-    background-color: limegreen;
-}
-
 .pier {
     padding-top: 100%;
     background-image: url(assets/pier.jpg);
@@ -246,9 +242,25 @@ h1, h2 {
     max-height: 25px;
 }
 
+.pup .section-header img.desktop {
+    display: none;
+}
+.pup .section-header img.mobile {
+    max-height: none;
+}
+
 @media (min-width: 768px) {
     .section-header img {
         max-height: 100%;
+    }
+    .pup .section-header img.mobile {
+        display: none;
+    }
+
+    .pup .section-header img.desktop {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -266,12 +278,39 @@ h1, h2 {
     content: '';
     background: transparent url(assets/flavors-dots.png) left top no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 100px;
+    width: 75%;
+    height: 0;
+    padding-bottom: 34.1422%;
     display: block;
     position: absolute;
-    top: -30px;
+    top: -50px;
     z-index: 2;
+}
+
+@media (min-width: 500px) {
+    .mixes:before {
+        width: 50%;
+    }
+}
+
+@media (min-width: 700px) {
+    .mixes:before {
+        top: -100px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mixes:before {
+        top: -125px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .mixes:before {
+        width: 803px;
+        height: 274px;
+        top: -150px;
+    }
 }
 
 
@@ -287,7 +326,7 @@ h1, h2 {
 
 @media (min-width: 768px) {
     .mixes__content {
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
@@ -309,54 +348,168 @@ ul {
 
 .instagram {
     background-color: #fcfbf4;
-    background-image: url(assets/instagram-black-swooshes.png), url(assets/instagram-bottom-blue.png);
+    background-image: url(assets/bottom-blue.png);
     background-repeat: no-repeat;
-    background-position: top right, bottom left;
-    background-size: auto, cover;
+    background-position: bottom left;
+    background-size: 120% auto;
+    position: relative;
+}
+
+@media (min-width: 1578px) {
+    .instagram {
+        background-size: 100% auto;
+    }
+}
+
+.instagram:before {
+    content: '';
+    background: transparent url(assets/black-swooshes.png) center center no-repeat;
+    display: block;
+    background-size: contain;
+    height: 65px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+
+@media (min-width:600px) {
+    .instagram:before {
+        height: 80px;
+    }
+}
+
+@media (min-width:768px) {
+    .instagram:before {
+        height: 115px;
+        top: -15px;
+    }
+}
+
+@media (min-width:1200px) {
+    .instagram:before {
+        height: 150px;
+        top: 0;
+    }
+}
+
+@media (min-width: 1578px) {
+    .instagram:before {
+        height: 198px;
+        top: 0;
+    }
 }
 
 .insta-images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .insta-images {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .insta-image {
-    background-color: lightgrey;
-    height: 250px;
-    width: 250px;
+    width: auto;
 }
+
+.insta-image img {
+    max-width: 100%;
+}
+
 
 .pup {
     position: relative;
     background-color: #d8d14d;
-    background-image: url(assets/pupnola-shrubbery.png), url(assets/pupnola-doggo.png);
-    background-size: contain, auto;
-    background-position: bottom left, bottom right;
-    background-repeat: no-repeat;
+    padding-bottom: 200px;
+}
 
+@media (min-width: 992px) {
+    .pup {
+        padding-bottom: 5em;
+    }
 }
 
 .pup__content {
-    max-width: 700px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    font-size: 16px;
+}
+@media (min-width: 768px) {
+    .pup__content {
+        max-width: 500px;
+    }
+}
+@media (min-width: 992px) {
+    .pup__content {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 16px;
+    }
 }
 
-@media (min-width: 768px){
-    .pup__content {
-        position: relative;
-        max-width: 350px;
-        font-size: 24px;
+.pup__body-text {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .pup__body-text {
+        font-size: 18px;
+    }
+}
+
+
+.pup:before {
+    content: '';
+    background: transparent url(assets/pupnola-shrubbery.png) right bottom no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 80%;
+
+}
+
+.pup:after {
+    content: '';
+    background: transparent url(assets/pupnola-doggo.png) center center no-repeat;
+    /* padding-bottom: 43.2051%; /* 86.5102% */
+    width: 200px;
+    height: 173px;
+    display: block;
+    background-size: contain;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 992px) {
+    .pup:after {
+        width: 400px;
+        height: 346px;
     }
 }
 
 .contact {
     background-color: #3f5967;
-    border-top: 1px solid #fcfbf4;
     box-sizing: border-box;
     color: #fcfbf4;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .contact a {
@@ -370,6 +523,11 @@ ul {
 .copyright p {
     display: inline-block;
     margin: 0;
+    font-size: 14px;
+}
+
+.contact-info > *:first-child {
+    margin-top: 0;
 }
 
 a {
