@@ -1,0 +1,238 @@
+body {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.content {
+    margin: auto;
+}
+
+.header {
+    background-image: url(assets/angles-top.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    margin-bottom: -385px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding-top: 100px;
+    }
+}
+
+.header__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 0.25em;
+}
+
+.header__title:after {
+    display: block;
+    content: '· · · ·';
+    line-height: 1;
+}
+
+.header__subtitle {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+}
+
+h1, h2 {
+    margin-top: 0;
+    font-size: 100px;
+}
+
+.button-header {
+    width: 25%;
+    font-size: 20px;
+    background-color: #fcfbf4;
+    border: 1px solid #D6CD4D;
+}
+
+.btn {
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1em;
+    line-height: 1;
+    color: #3f5967;
+    transition: all 0.25s;
+}
+
+@media (min-width: 768px) {
+    .btn { font-size: 24px; }
+}
+
+.btn--header {
+    border-color: #d8d14d;
+}
+
+.btn--header:hover {
+    background-color: #d8d14d;
+}
+
+.btn--mixes {
+    border-color: #fff;
+}
+
+.btn--mixes:hover {
+    background-color: #fff;
+}
+
+.main-content {
+    background-color: limegreen;
+}
+
+.pier {
+    padding: 400px 0;
+    background-image: url(assets/pier.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.section-header {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .section-header {
+        font-size: 70px;
+    }
+}
+
+.section {
+    padding: 5em 1em;
+}
+
+.mixes {
+    background: #facbbb url(assets/flavors-dots.png) left top no-repeat;
+}
+
+.mixes__content {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .mixes__content {
+        font-size: 24px;
+    }
+}
+
+.flavors-pricing {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.button-mixes {
+    background-color: #facbbb;
+    font-size: 20px;
+}
+
+.instagram {
+    background-color: #fcfbf4;
+    background-image: url(assets/instagram-black-swooshes.png), url(assets/instagram-bottom-blue.png);
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    background-size: auto, cover;
+}
+
+.insta-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.insta-image {
+    background-color: lightgrey;
+    height: 250px;
+    width: 250px;
+}
+
+.pup {
+    position: relative;
+    background-color: #d8d14d;
+    background-image: url(assets/pupnola-shrubbery.png), url(assets/pupnola-doggo.png);
+    background-size: contain, auto;
+    background-position: bottom left, bottom right;
+    background-repeat: no-repeat;
+
+}
+
+.pup__content {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (min-width: 768px){
+    .pup__content {
+        position: relative;
+        max-width: 350px;
+        font-size: 24px;
+    }
+}
+
+.contact {
+    background-color: #3f5967;
+    border-top: 1px solid #fcfbf4;
+    box-sizing: border-box;
+    color: #fcfbf4;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact p {
+    display: inline-block;
+}
+
+.copyright p {
+    display: inline-block;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+@media only screen and (min-width: 479px){
+    .flavors {
+        display: block;
+    }
+
+    .contact p {
+        display: block;
+    }
+
+    .divider {
+        display: none;
+    }
+    
+    .copyright p {
+        display: block;
+    }
+}
