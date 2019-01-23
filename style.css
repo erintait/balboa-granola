@@ -1,553 +1,557 @@
 body {
-    margin: auto;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 .content {
-    margin: auto;
+  margin: auto;
 }
 
 .header {
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: -28%;
-    position: relative;
-    z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: -28%;
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 800px) {
-    .header {
-        margin-bottom: -190px;
-    }
+  .header {
+    margin-bottom: -190px;
+  }
 }
 @media (min-width: 992px) {
-    .header {
-        margin-bottom: -225px;
-    }
+  .header {
+    margin-bottom: -225px;
+  }
 }
 .header__wrapper {
-    background-image: url(assets/angles-top.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 1000px auto;
-    padding-top: 30px;
-    padding-bottom: 120px;
-    padding-left: 2em;
-    padding-right: 2em;
+  background-image: url(assets/angles-top.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 1000px auto;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 @media (min-width: 340px) {
-    .header__wrapper {
-        background-size: 1225px auto;
-        background-position: center bottom;
-    }
+  .header__wrapper {
+    background-size: 1225px auto;
+    background-position: center bottom;
+  }
 }
 @media (min-width: 420px) {
-    .header__wrapper {
-        background-size: 1350px auto;
-        background-position: center bottom;
-    }
+  .header__wrapper {
+    background-size: 1350px auto;
+    background-position: center bottom;
+  }
 }
 @media (min-width: 460px) {
-    .header__wrapper {
-        background-size: 1800px auto;
-        background-position: center top;
-        padding-bottom: 155px;
-    }
+  .header__wrapper {
+    background-size: 1800px auto;
+    background-position: center top;
+    padding-bottom: 155px;
+  }
 }
 @media (min-width: 768px) {
-    .header__wrapper {
-        background-size: 2000px auto;
-        padding-top: 40px;
-    }
+  .header__wrapper {
+    background-size: 2000px auto;
+    padding-top: 40px;
+  }
 }
 @media (min-width: 992px) {
-    .header__wrapper {
-        background-size: auto auto;
-        padding-top: 60px;
-        padding-bottom: 270px;
-    }
+  .header__wrapper {
+    background-size: auto auto;
+    padding-top: 60px;
+    padding-bottom: 270px;
+  }
 }
 .header:before {
-    content: '';
-    background-color: #fcfbf4;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    bottom: 100px;
+  content: '';
+  background-color: #fcfbf4;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  bottom: 100px;
 }
 @media (min-width: 768px) {
-    .header:before {
-        bottom: 110px;
-    }
+  .header:before {
+    bottom: 110px;
+  }
 }
 @media (min-width: 992px) {
-    .header:before {
-        bottom: 270px;
-    }
+  .header:before {
+    bottom: 270px;
+  }
 }
 
 .header img {
-    width: 100%;
-    max-width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 @media (min-width: 768px) {
-    .header img {
-        max-width: 100%;
-        width: 300px;
-    }
+  .header img {
+    max-width: 100%;
+    width: 300px;
+  }
 }
 
 @media (min-width: 992px) {
-    .header img {
-        max-width: 100%;
-        width: auto;
-    }
+  .header img {
+    max-width: 100%;
+    width: auto;
+  }
 }
 
 .header__title {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-bottom: 0.5em;
-    margin-top: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+  margin-top: 0;
 }
 
 @media (min-width: 992px) {
-    .header__title {
-        margin-bottom: 1em;
-    }
+  .header__title {
+    margin-bottom: 1em;
+  }
 }
 
-h1, h2 {
-    margin-top: 0;
-    font-size: 100px;
+h1,
+h2 {
+  margin-top: 0;
+  font-size: 100px;
 }
 
 .button-header {
-    width: 25%;
-    font-size: 20px;
-    background-color: #fcfbf4;
-    border: 1px solid #D6CD4D;
+  width: 25%;
+  font-size: 20px;
+  background-color: #fcfbf4;
+  border: 1px solid #d6cd4d;
 }
 
 .btn {
-    font-size: 14px;
-    text-decoration: none;
-    display: inline-block;
-    border-width: 2px;
-    border-style: solid;
-    padding: 0.5em 1em;
-    line-height: 1;
-    color: #3f5967;
-    transition: all 0.25s;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.5em 1em;
+  line-height: 1;
+  color: #3f5967;
+  transition: all 0.25s;
 }
 
 @media (min-width: 768px) {
-    .btn { font-size: 16px; }
+  .btn {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
-    .btn { font-size: 24px; }
+  .btn {
+    font-size: 24px;
+  }
 }
 
 .btn--header {
-    border-color: #d8d14d;
+  border-color: #d8d14d;
 }
 
 .btn--header:hover {
-    background-color: #d8d14d;
+  background-color: #d8d14d;
 }
 
 .btn--mixes {
-    border-color: #fff;
+  border-color: #fff;
 }
 
 .btn--mixes:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .pier {
-    padding-top: 100%;
-    background-image: url(assets/pier.jpg);
-    background-position: center top;
-    background-size: cover;
-    position: relative;
+  padding-top: 100%;
+  background-image: url(assets/pier.jpg);
+  background-position: center top;
+  background-size: cover;
+  position: relative;
 }
 
 @media (min-width: 800px) {
-    .pier {
-        padding-top: 775px;
-    }
+  .pier {
+    padding-top: 775px;
+  }
 }
 
-
 @media (min-width: 1575px) {
-    .pier {
-        background-position: center center;
-    }
+  .pier {
+    background-position: center center;
+  }
 }
 
 .pier:after {
-    content: '';
-    background: transparent url(assets/angles-pink.png) center bottom no-repeat;
-    background-size: 110% auto;
-    height: 50px;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-    z-index: 1;
+  content: '';
+  background: transparent url(assets/angles-pink.png) center bottom no-repeat;
+  background-size: 110% auto;
+  height: 50px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 @media (min-width: 385px) {
-    .pier:after {
-        height: 100px;
-    }
+  .pier:after {
+    height: 100px;
+  }
 }
 @media (min-width: 800px) {
-    .pier:after {
-        background-size: 105% auto;
-        height: 150px;
-    }
+  .pier:after {
+    background-size: 105% auto;
+    height: 150px;
+  }
 }
 @media (min-width: 1100px) {
-    .pier:after {
-        background-size: auto auto;
-        background-position: center top;
-        height: 150px;
-    }
+  .pier:after {
+    background-size: auto auto;
+    background-position: center top;
+    height: 150px;
+  }
 }
 @media (min-width: 1300px) {
-    .pier:after {
-        background-size: auto auto;
-        background-position: center top;
-        height: 200px;
-    }
+  .pier:after {
+    background-size: auto auto;
+    background-position: center top;
+    height: 200px;
+  }
 }
 
 .section-header {
-    font-size: 24px;
-    text-transform: uppercase;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
-    .section-header {
-        font-size: 70px;
-    }
+  .section-header {
+    font-size: 70px;
+  }
 }
 
 .section-header img {
-    max-height: 25px;
+  max-height: 25px;
 }
 
 .pup .section-header img.desktop {
-    display: none;
+  display: none;
 }
 .pup .section-header img.mobile {
-    max-height: none;
+  max-height: none;
 }
 
 @media (min-width: 768px) {
-    .section-header img {
-        max-height: 100%;
-    }
-    .pup .section-header img.mobile {
-        display: none;
-    }
+  .section-header img {
+    max-height: 100%;
+  }
+  .pup .section-header img.mobile {
+    display: none;
+  }
 
-    .pup .section-header img.desktop {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .pup .section-header img.desktop {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .section {
-    padding: 5em 1em;
+  padding: 5em 1em;
 }
 
 .mixes {
-    background: #facbbb none;
-    position: relative;
-    padding-top: 0 !important;
+  background: #facbbb none;
+  position: relative;
+  padding-top: 0 !important;
 }
 
 .mixes:before {
-    content: '';
-    background: transparent url(assets/flavors-dots.png) left top no-repeat;
-    background-size: contain;
-    width: 75%;
-    height: 0;
-    padding-bottom: 34.1422%;
-    display: block;
-    position: absolute;
-    top: -50px;
-    z-index: 2;
+  content: '';
+  background: transparent url(assets/flavors-dots.png) left top no-repeat;
+  background-size: contain;
+  width: 75%;
+  height: 0;
+  padding-bottom: 34.1422%;
+  display: block;
+  position: absolute;
+  top: -50px;
+  z-index: 2;
 }
 
 @media (min-width: 500px) {
-    .mixes:before {
-        width: 50%;
-    }
+  .mixes:before {
+    width: 50%;
+  }
 }
 
 @media (min-width: 700px) {
-    .mixes:before {
-        top: -100px;
-    }
+  .mixes:before {
+    top: -100px;
+  }
 }
 
 @media (min-width: 1000px) {
-    .mixes:before {
-        top: -125px;
-    }
+  .mixes:before {
+    top: -125px;
+  }
 }
 
 @media (min-width: 1400px) {
-    .mixes:before {
-        width: 803px;
-        height: 274px;
-        top: -150px;
-    }
+  .mixes:before {
+    width: 803px;
+    height: 274px;
+    top: -150px;
+  }
 }
 
-
 .mixes__content {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 16px;
-    position: relative;
-    z-index: 4;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  z-index: 4;
 }
 
 @media (min-width: 768px) {
-    .mixes__content {
-        font-size: 18px;
-    }
+  .mixes__content {
+    font-size: 18px;
+  }
 }
 
 .flavors-pricing {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2em;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
 }
 
 ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .button-mixes {
-    background-color: #facbbb;
-    font-size: 20px;
+  background-color: #facbbb;
+  font-size: 20px;
 }
 
 .instagram {
-    background-color: #fcfbf4;
-    background-image: url(assets/bottom-blue.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 120% auto;
-    position: relative;
+  background-color: #fcfbf4;
+  background-image: url(assets/bottom-blue.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 120% auto;
+  position: relative;
 }
 
 @media (min-width: 1578px) {
-    .instagram {
-        background-size: 100% auto;
-    }
+  .instagram {
+    background-size: 100% auto;
+  }
 }
 
 .instagram:before {
-    content: '';
-    background: transparent url(assets/black-swooshes.png) center center no-repeat;
-    display: block;
-    background-size: contain;
-    height: 65px;
-    position: absolute;
+  content: '';
+  background: transparent url(assets/black-swooshes.png) center center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+
+@media (min-width: 600px) {
+  .instagram:before {
+    height: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .instagram:before {
+    height: 115px;
+    top: -15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .instagram:before {
+    height: 150px;
     top: 0;
-    right: 0;
-    width: 50%;
-}
-
-@media (min-width:600px) {
-    .instagram:before {
-        height: 80px;
-    }
-}
-
-@media (min-width:768px) {
-    .instagram:before {
-        height: 115px;
-        top: -15px;
-    }
-}
-
-@media (min-width:1200px) {
-    .instagram:before {
-        height: 150px;
-        top: 0;
-    }
+  }
 }
 
 @media (min-width: 1578px) {
-    .instagram:before {
-        height: 198px;
-        top: 0;
-    }
+  .instagram:before {
+    height: 198px;
+    top: 0;
+  }
 }
 
 .insta-images {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .insta-images {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
-
-@media (min-width: 768px) {
-    .insta-images {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  }
 }
 
 .insta-image {
-    width: auto;
+  width: auto;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .insta-image img {
-    max-width: 100%;
+  width: 100%;
+  max-width: 350px;
 }
 
-
 .pup {
-    position: relative;
-    background-color: #d8d14d;
-    padding-bottom: 200px;
+  position: relative;
+  background-color: #d8d14d;
+  padding-bottom: 200px;
 }
 
 @media (min-width: 992px) {
-    .pup {
-        padding-bottom: 5em;
-    }
+  .pup {
+    padding-bottom: 5em;
+  }
 }
 
 .pup__content {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
-    .pup__content {
-        max-width: 500px;
-    }
+  .pup__content {
+    max-width: 500px;
+  }
 }
 @media (min-width: 992px) {
-    .pup__content {
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        font-size: 16px;
-    }
+  .pup__content {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 .pup__body-text {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
-    .pup__body-text {
-        font-size: 18px;
-    }
+  .pup__body-text {
+    font-size: 18px;
+  }
 }
 
-
 .pup:before {
-    content: '';
-    background: transparent url(assets/pupnola-shrubbery.png) right bottom no-repeat;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 80%;
-
+  content: '';
+  background: transparent url(assets/pupnola-shrubbery.png) right bottom
+    no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 80%;
 }
 
 .pup:after {
-    content: '';
-    background: transparent url(assets/pupnola-doggo.png) center center no-repeat;
-    /* padding-bottom: 43.2051%; /* 86.5102% */
-    width: 200px;
-    height: 173px;
-    display: block;
-    background-size: contain;
-    margin-left: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  content: '';
+  background: transparent url(assets/pupnola-doggo.png) center center no-repeat;
+  /* padding-bottom: 43.2051%; /* 86.5102% */
+  width: 200px;
+  height: 173px;
+  display: block;
+  background-size: contain;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @media (min-width: 992px) {
-    .pup:after {
-        width: 400px;
-        height: 346px;
-    }
+  .pup:after {
+    width: 400px;
+    height: 346px;
+  }
 }
 
 .contact {
-    background-color: #3f5967;
-    box-sizing: border-box;
-    color: #fcfbf4;
-    padding-top: 2em;
-    padding-bottom: 2em;
+  background-color: #3f5967;
+  box-sizing: border-box;
+  color: #fcfbf4;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .contact a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .contact p {
-    display: inline-block;
+  display: inline-block;
 }
 
 .copyright p {
-    display: inline-block;
-    margin: 0;
-    font-size: 14px;
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;
 }
 
 .contact-info > *:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
-@media only screen and (min-width: 479px){
-    .flavors {
-        display: block;
-    }
+@media only screen and (min-width: 479px) {
+  .flavors {
+    display: block;
+  }
 
-    .contact p {
-        display: block;
-    }
+  .contact p {
+    display: block;
+  }
 
-    .divider {
-        display: none;
-    }
-    
-    .copyright p {
-        display: block;
-    }
+  .divider {
+    display: none;
+  }
+
+  .copyright p {
+    display: block;
+  }
 }
